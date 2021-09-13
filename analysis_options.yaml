@@ -1,0 +1,13 @@
+include: package:lint/analysis_options_package.yaml
+analyzer:
+  strong-mode:
+    # Will become the default once non-nullable types land
+    # https://github.com/dart-lang/sdk/issues/31410#issuecomment-510683629
+    implicit-casts: true
+linter:
+  rules: 
+    
+      avoid_annotating_with_dynamic: false
+      invalid_assignment: false
+      always_specify_types: false
+      file_names: false
